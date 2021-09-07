@@ -3,11 +3,14 @@ import React from "react";
 const Weather = props =>{
     return(
         <div className="container text-light">
-            <div className="cards pt-4">
-                <h1>
+            <div className="cards shadow ">
+                <br/>
+
+                    <h2>
                     {props.city}
-                </h1>
-                <h5 className="py-4">
+                    </h2>
+                    <h5 className="py-4">
+                   
                    <i className={`wi ${props.weatherIcon} display-1`}></i>
                 </h5>
                 {props.temp_celsius?(
@@ -16,6 +19,8 @@ const Weather = props =>{
 
                 {minmaxTemp(props.temp_min,props.temp_max)}
                 <h4 className="py-3">{props.description}</h4>
+
+                   
             </div>
         </div>
     );

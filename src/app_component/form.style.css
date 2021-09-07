@@ -1,29 +1,54 @@
-form{
-    margin-top: 3rem;
+.container{
+    padding-top: 3.5rem;
 }
+.cards{
+  width: 270px;
+  height: 420px;
+  margin-left: 28rem;
+  position: relative;
+  flex: 0 0 240px;
+  background-image: url("https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=");
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow:
+    rgba(black, 0.66) 0 30px 60px 0,
+    inset #333 0 0 0 5px,
+    inset rgba(white, 0.5) 0 0 0 6px;
+  transition: 1s $returnEasing;
 
-form input[name="city"],
-form input[name="country"]{
-    background-color: transparent;
-    color: white;
+  
+}
+.custom-search {
+    position: relative;
+    width: 400px;
+  }
+  .custom-search-input {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px 100px 10px 20px; 
+    line-height: 1;
+    box-sizing: border-box;
+    outline: none;
+    background: transparent;
+  }
+  
+  .custom-search-botton {
+
+    position: absolute;
+    right: 3px; 
+    top: 3px;
+    bottom: 3px;
     border: 0;
-    border-bottom: 2px solid whitesmoke;
-    border-radius: 0;
-}
-
-form input:focus{
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-form input::-webkit-input-placeholder{
-    color: rgb(245, 243, 243) !important;
-
-}
-
-.btn{
-    background-color: darkblue;
-    color: white;
-    border-color: darkblue;
-}
-
-
+    background: #11038a;
+    color: #fff;
+    outline: none;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 100px;
+    z-index: 2;
+  }
+  .custom-search-botton:hover{
+      background-color: yellow;
+      color: black;
+  }
